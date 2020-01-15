@@ -15,9 +15,7 @@ should be installed MySQL and Docker.
 
 - Make database on Docker:
 
-sudo docker run --name tzproject2 -v ~/tz_volume:/var/lib/mysql \
--p 3307:3306 -e MYSQL_USER=a -e MYSQL_PASSWORD=a -e MYSQL_ROOT_PASSWORD=a \
--e MYSQL_DATABASE=a mysql:latest
+sudo docker run --name tzproject2 -v ~/tz_volume:/var/lib/mysql -p 3307:3306 -e MYSQL_USER=a -e MYSQL_PASSWORD=a -e MYSQL_ROOT_PASSWORD=a -e MYSQL_DATABASE=a mysql:latest
 
 - Migrate to db:
 
