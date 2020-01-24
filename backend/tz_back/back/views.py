@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
@@ -34,7 +36,7 @@ class UserStatisticsView(APIView):
         until = valid_data.get('until')
         today = settings.TODAY_DATE
         if not since:
-            since = today.replace(day=7)
+            since = today - timedelta(6)
         if not until:
             until = today
         return since, until

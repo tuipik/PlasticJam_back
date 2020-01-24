@@ -80,6 +80,7 @@ CONFIG_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 DB_CONFIG_PATH = os.path.join(CONFIG_ROOT, 'db.cnf')
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',

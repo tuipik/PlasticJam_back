@@ -5,5 +5,3 @@ password=a
 host=127.0.0.1
 port=3307
 default-character-set = utf8
-
-
