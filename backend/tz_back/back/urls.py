@@ -9,8 +9,7 @@ app_name = "back"
 
 urlpatterns = [
     url(r'^users/$', UsersView.as_view(), name='users_list'),
-    url(r'^users/(?P<pk>\d+)/$', OneUserView.as_view(), name='one_user'),
+    url(r'^users/(?P<pk>\d+)/$', OneUserView.as_view(), name='user_detail'),
     url(r'^stats/(?P<pk>\d+)/$', UserStatisticsView.as_view(), name='user_stat'),
     url(r'^', index),
 ]
-

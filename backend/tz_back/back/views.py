@@ -19,7 +19,7 @@ class StandardResultsSetPagination(PageNumberPagination):
 
 
 class UsersView(ListAPIView):
-    queryset = m.User.objects.all()
+    queryset = m.User.objects.all().order_by('id')
     serializer_class = s.UserSerializer
     pagination_class = StandardResultsSetPagination
 
